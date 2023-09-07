@@ -4,52 +4,48 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <div class='circle'><div class='line'></div></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="line"></div>
 
-        <style>
-          *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0
-          }
-          body{
-            background: #4F77FF;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-          }
-          .circle {
-            width: 150px;
-            height: 150px;
-            background: #FFFFFF;
-            border-radius: 50%;
-            /* position: relative; no need since its a flex item */
-            z-index: 10
-          }
-          .line{
-            position: absolute;
-            
-            
-              width: 350px;
-            height: 150px;
-            background: #003AFF;
-            transform: rotate(45deg) translate(20px,71px);
-            z-index: 11;
-            
-          
-            
-            
-          }
-        </style>
-    </body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #4f77ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .circle {
+        width: 150px;
+        height: 150px;
+        background: #ffffff;
+        border-radius: 50%;
+        /* position: relative; no need since its a flex item */
+        z-index: 100;
+      }
+      .line {
+        position: absolute;
+
+        width: 850px;
+        height: 150px;
+        background: #003aff;
+        transform: rotate(45deg) translateX(26rem);
+        z-index: 11;
+      }
+    </style>
+  </body>
 </html>
