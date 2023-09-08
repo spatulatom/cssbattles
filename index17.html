@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div></div>
+    <div><div></div></div>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #09042a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        background: #dd6b4d;
+        border-radius: 50%;
+      }
+      body > div:nth-of-type(1) {
+        background: #7b3f61;
+        transform: translate(25px);
+      }
+      body > div:nth-child(2) {
+        background: #e78481;
+        transform: translate(-25px);
+        overflow: hidden;
+      }
+      div > div {
+        background: #09042a;
+
+        transform: translateX(-100px);
+      }
+    </style>
+  </body>
+</html>
