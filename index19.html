@@ -4,106 +4,69 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-  </head>
-  </html><body>
-    
-  </body>
-  <div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  
-  </div>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      background: #09042A;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh
-    }
-    body > div {
-      background: ;
-      display: grid;
-      grid-template-columns: 70px 70px 70px;
-      grid-template-rows: 70px 70px 70px;
-      position: relative
-  
-    }
-  body > div >div:nth-child(1) {
-    grid-row: 1;
-    grid-column: 2;
-    background: #F5BB9C;
-    border-radius: 50%;
-    height: 79px;
-    width: 79px;
-    border: solid #09042A 10px;
-    transform: translate(-5px,14px);
-    position: relative ;
-    z-index: 6
-      
-           }
-      body > div >div:nth-child(2) {
-    grid-row: 3;
-    grid-column: 2;
-    background: #F5BB9C;
-    border-radius: 50%;
-    height: 79px;
-    width: 79px;
-          border: solid #09042A 10px;
-    transform: translate(-5px,-23px);
-       position: relative ;
-    z-index: 6
-      
-      
-           }
-
-        body > div >div:nth-child(3) {
-    grid-row: 2;
-    grid-column: 1;
-    background: #09042A;
-    border: solid 10px #E78481;
-    border-radius: 50%;
-    height: 79px;
-    width: 79px;
-    transform: translate(6px,-4px)
-    }
-
-           body > div >div:nth-child(4) {
-    grid-row: 2;
-    grid-column: 3;
-    background: #09042A;
-    border: solid 10px #E78481;
-    border-radius: 50%;
-    height: 79px;
-    width: 79px;
-    transform: translate(-15px,-3px)
-    }
-
-
-              body > div >div:nth-child(5) {
-    grid-row: 2;
-    grid-column: 2;
-    background: #E78481;
-    
-    height: 57px;
-    width: 59px;
-    transform: translate(6px, 15px)
-    }
-  </style>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div></div>
+        <div></div>
+        <style>
+          *, *::before, *::after {
+            box-sizing: border-box;
+          }
+          body {
+            background: #09042A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 16px);
+          }
+          div {
+            width: 60px;
+            height: 60px;
+            background: #E78481;
+            position: absolute;
+          }
+          div::before, div::after {
+            content: "";
+            background: #F5BB9C;
+            width: 80px;
+            height: 80px;
+            border: 10px solid #09042A;
+            border-radius: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            --spaceX: 10px;
+            --spaceY: 3px;
+          }
+          div::before {
+            top: calc(-100% - var(--spaceY));
+          }
+          div::after {
+            bottom: calc(-100% - var(--spaceY));
+          }
+          div ~ div {
+            background: unset;
+          }
+          div ~ div::before, div ~ div::after {
+            top: 50%;
+            transform: translateY(-50%);
+            border-color: #E78481;
+            background: #09042A;
+          }
+          div ~ div::before {
+            left: calc(-100% - var(--spaceX));
+          }
+          div ~ div::after {
+            left: unset;
+            right: calc(-100% - var(--spaceX));
+          }
+        </style>
+    </body>
 </html>
