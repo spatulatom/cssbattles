@@ -1,1 +1,54 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div></div>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #e6d9ac;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      body > div {
+        width: 30px;
+        height: 150px;
+        background: #bd6c27;
+        transform: translateY(-15px);
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      body > div > div {
+        width: 120px;
+        height: 30px;
+        background: #bd6c27;
+      }
+
+      body > div ~ div {
+        width: 121px;
+        height: 150px;
+        background: #8f2d2b;
+        transform: translateY(15px);
+        z-index: 2;
+      }
+    </style>
+  </body>
+</html>
