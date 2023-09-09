@@ -12,44 +12,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="" />
   </head>
-  <div class="container">
+  <body>
     <div>
-      <div class="item"></div>
-      <div class="item"></div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+      <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        body > div {
+          background: #998235;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        div > div {
+          width: 80px;
+          border-radius: 0 50px 0 50px;
+          margin: 20px 10px;
+        }
+        div > div > div:nth-child(1) {
+          height: 100px;
+          background: #1a4341;
+        }
+        div > div > div:nth-child(2) {
+          height: 60px;
+          background: #f3ac3c;
+        }
+        body > div > div ~ div {
+          transform: scaleX(-1) rotate(180deg);
+        }
+      </style>
     </div>
-    <div id="rotate">
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        background: #998235;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      .item {
-        width: 80px;
-        border-radius: 0 50px 0 50px;
-        margin: 20px 10px;
-      }
-      .item:nth-child(1) {
-        height: 100px;
-        background: #1a4341;
-      }
-      .item:nth-child(2) {
-        height: 60px;
-        background: #f3ac3c;
-      }
-      #rotate {
-        transform: scaleX(-1) rotate(180deg);
-      }
-    </style>
-  </div>
+  </body>
 </html>
