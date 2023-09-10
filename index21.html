@@ -14,82 +14,100 @@
   </head>
   <body>
     <div>
-        <div><div></div></div>
-        <div><div></div></div>
-        <div><div></div></div>
-        <div><div></div></div>
-      </div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+    </div>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #66284a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      body > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 200px;
+        /* transform: rotate(-135deg); */
+      }
+      body > div > div:not(:last-child) {
+        background: #66284a;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+      }
+      body > div > div > div:not(body > div > div:nth-child(4) div) {
+        background: #66284a;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: top left;
+        border-bottom-right-radius: 100%;
+      }
+      body > div > div:nth-child(1) {
+        border: solid 20px #fdfbf8;
+        transform: translate(7px, 7px);
+        z-index: 1;
+      }
+      body > div > div:nth-child(1) div {
+        transform: rotate(45deg);
+      }
+      body > div > div:nth-child(2) {
+        border: solid 20px #d86f45;
+        transform: translate(-7px, 7px);
+        z-index: 0;
+      }
+      body > div > div:nth-child(2) div {
+        transform: rotate(135deg);
+      }
+      body > div > div:nth-child(3) {
+        border: solid 20px #d669ec;
+        transform: translate(7px, -7px);
+        z-index: 1;
+      }
+      body > div > div:nth-child(3) div {
+        transform: rotate(-45deg);
+      }
+      body > div > div:nth-child(4) {
+        width: 100px;
+        height: 50px;
+        border-top: 20px solid black;
+        border-right: 20px solid black;
+        border-left: 20px solid black;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        background:  #66284a;
+        /* border: solid 20px #f0cd48; */
+        transform: translate(7px, 7px) rotate(135deg);
+        z-index: 1;
   
-      <style>
-        * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-        body {
-          background: #66284a;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-        }
-        body > div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          width: 200px;
-          transform: rotate(-135deg);
-        }
-        body > div > div {
-          background: #66284a;
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          position: relative;
-        }
-        body > div > div > div {
-          background: #66284a;
-          width: 50px;
-          height: 50px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform-origin: top left;
-          border-bottom-right-radius: 100%;
-        }
-        body > div > div:nth-child(1) {
-          border: solid 20px #fdfbf8;
-          transform: translate(7px,7px);
-          z-index:1
-        }
-        body > div > div:nth-child(1) div {
-          transform: rotate(45deg);
-        }
-        body > div > div:nth-child(2) {
-          border: solid 20px #d86f45;
-            transform: translate(-7px,7px);
-          z-index: ;
-        }
-        body > div > div:nth-child(2) div {
-          transform: rotate(135deg);
-        }
-        body > div > div:nth-child(3) {
-          border: solid 20px #d669ec;
-            transform: translate(7px,-7px);
-          z-index: 1;
-        }
-        body > div > div:nth-child(3) div {
-          transform: rotate(-45deg);
-        }
-        body > div > div:nth-child(4) {
-          border: solid 20px #f0cd48;
-            transform: translate(-7px,-7px);
-          z-index: 1;
-        }
-        body > div > div:nth-child(4) div {
-          transform: rotate(-135deg);
-        }
-      </style>
+      }
+      body > div > div:nth-child(4) div {
+        width: 100px;
+        height: 50px;
+        border-top: 20px solid white;
+        border-right: 20px solid white;
+        border-left: 20px solid white;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        background:  #66284a;
+        transform: rotate(90deg) translate(4px,-4px)
+        
+      }
+    </style>
   </body>
 </html>
