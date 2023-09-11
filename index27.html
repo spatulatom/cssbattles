@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #b5d1fb;
+      }
+      div {
+        width: 220px;
+        height: 75px;
+        border-top: #230259 solid 30px;
+        border-right: #230259 solid 30px;
+        border-top-right-radius: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      div:nth-child(1) {
+        transform: translate(-93%, -100%);
+        z-index: 1;
+      }
+      div:nth-child(2) {
+        transform: translate(-7%, -100%) scaleX(-1);
+        border-color: #8819f6;
+      }
+      div:nth-child(3) {
+        transform: translate(-93%) scaleY(-1);
+        border-color: #8819f6;
+      }
+      div:nth-child(4) {
+        transform: translate(-7%) scale(-1, -1);
+      }
+    </style>
+  </body>
+</html>
