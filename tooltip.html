@@ -14,12 +14,17 @@
     </head>
     <body>
         <div class="tooltip">Hover over me
-            <span class="tooltip-text">Tooltip text</span>
+            <span class="tooltip-text">Tooltip text<span class='here'></span></span>
           </div>
+          <div><h2>Lets create a triangle:</h2></div>
+          <div class="triangle"></div>
 <style>/* Tooltip container */
+/* 1. try to not use pseud elements
+2. understand the border  */
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #784972;
@@ -53,7 +58,8 @@ body{
     }
     
     /* Tooltip arrow */
-    .tooltip .tooltip-text::after {
+    /* .tooltip .tooltip-text::after { */
+        .here{
       content: "";
       position: absolute;
       top: 100%; /* Place arrow at the bottom of tooltip */
@@ -69,6 +75,17 @@ body{
       visibility: visible;
       opacity: 1;
     }
+
+    /* triangle */
+    .triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+
     </style>          
     </body>
 </html>
