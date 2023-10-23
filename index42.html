@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div><div></div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #f4dcbf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      div:nth-child(1) {
+        width: 150px;
+        height: 60px;
+        background: #30383f;
+        position: absolute;
+        transform: translateY(70px);
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      div:nth-child(1) div {
+        width: 150px;
+        height: 60px;
+        background: #30383f;
+        transform: translateY(-25px);
+        border-radius: 50%;
+        border: 12px solid #556d7f;
+      }
+      div:nth-child(2) {
+        width: 30px;
+        height: 20px;
+        background: #fbd038;
+        position: absolute;
+        border-radius: 5px;
+        transform: translateY(70px);
+      }
+      div:nth-child(3) {
+        width: 0px;
+        height: 0px;
+        transform: translateY(-24px);
+        border-left: 44px solid transparent;
+        border-right: 44px solid transparent;
+        border-bottom: 150px solid #30383f;
+      }
+    </style>
+  </body>
+</html>
