@@ -12,22 +12,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="" />
   </head>
-  <body>
-    <div></div>
-    <style>
-      body {
-        background: #009b3a;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      div {
-        width: 150px;
-        height: 150px;
-        background: #fedf00;
-        transform: skew(0deg) rotate(45deg);
-      }
-    </style>
-  </body>
+  <div></div>
+  <div><div></div></div>
+
+  <style>
+    body {
+      background: #009b3a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* min-height: 100vh; */
+    }
+    body > div:nth-child(1) {
+      width: 212px;
+      height: 212px;
+      background: #fedf00;
+      transform: skew(0deg) rotateX(48deg) rotateY(0deg) rotateZ(45deg);
+    }
+    div:nth-child(2) {
+      width: 120px;
+      height: 120px;
+      background: #002776;
+      position: absolute;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    div > div {
+      width: 200px;
+      height: 200px;
+      transform: translate(-80px, 30px);
+      border-radius: 50%;
+      border: 10px solid white;
+    }
+  </style>
 </html>
