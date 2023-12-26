@@ -4,19 +4,97 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #642328;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      body > div {
+        width: 160px;
+        height: 200px;
+        /* background: #FF8D7A; */
+        overflow: hidden;
+      }
+      body > div > div:nth-child(1) {
+        width: 80px;
+        height: 80px;
+        background: #ffffff;
+        border-radius: 50%;
+        transform: translate(40px, 0);
+      }
+      div > div:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #642328;
+        transform: translate(15px, 25px);
+      }
+      div > div:nth-child(2) {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #642328;
+        transform: translate(45px, 5px);
+      }
+
+      body > div > div:nth-child(2) {
+        width: 120px;
+        height: 120px;
+        background: #ffffff;
+        border-radius: 50%;
+        transform: translate(20px, -20px);
+      }
+      div > div:nth-child(3) {
+        width: 160px;
+        height: 160px;
+        background: #ffffff;
+        border-radius: 50%;
+        transform: translate(-0px, -95px);
+      }
+      div > div:nth-child(4) {
+        width: 80px;
+        height: 15px;
+        background: #ff8d7a;
+
+        transform: translate(40px, -300px);
+      }
+    </style>
+  </body>
 </html>
