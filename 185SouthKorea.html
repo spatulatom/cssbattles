@@ -13,10 +13,50 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div><div></div></div>
+        <div><div></div></div>
+        <style>
+          *{
+            box-sizing:border-box;margin:0;padding:0
+          }
+          body{
+            background: #A49FBB;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+         body> div:nth-child(1) {
+            width: 260px;
+            height: 30px;
+            background: #291D61;
+            position: absolute;
+            transform: translateY(-30px)
+          }
+           body> div:nth-child(1)>div{
+             width:0;
+             border-left: 60px transparent solid;
+             border-right: 60px transparent solid;
+             border-bottom: 70px #291D61 solid;
+                 border-top: 70px transparent solid;
+             transform: translate(75px, -132px)
+           }
         
-        <script src="" async defer></script>
+           body> div:nth-child(2) {
+            width: 260px;
+            height: 30px;
+            background: #291D61;
+            position: absolute;
+            transform: translateY(30px) rotate(180deg)
+          }
+           body> div:nth-child(2)>div{
+             width:0;
+             border-left: 60px transparent solid;
+             border-right: 60px transparent solid;
+             border-bottom: 70px #291D61 solid;
+                 border-top: 70px transparent solid;
+             transform: translate(70px, -132px)
+           }
+        </style>
     </body>
 </html>
